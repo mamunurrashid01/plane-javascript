@@ -8,4 +8,4 @@ console.log(arr);
 // arr.pop();
 
 // to get number of total element of an array we basically use '.length' method;
-console.log(arr.length);
+// console.log(arr.length);
