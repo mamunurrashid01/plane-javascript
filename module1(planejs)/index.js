@@ -65,3 +65,35 @@ console.log(tomatoPrice);
 //sorthand for same code of before codes for division
 tomatoPrice /= 5;
 console.log(tomatoPrice);
+
+//incremantal operator (++)
+let number3 = 90;
+console.log(number3);
+
+//increment 1 for the variable number3
+number3 = number3 + 1;
+console.log(number3);
+
+//or same code for number3 variable
+//(++) means add 1 to existing value
+number3++;
+console.log(number3);
+
+//decremental operator (--)
+let number4 = 100;
+
+number4 = number4 + 1;
+console.log(number4);
+
+//or same code for number4 variable
+// (--) means diducting 1 from existing value
+number4--;
+console.log(number4);
+
+//string concatination ,type conversion, parseInt, parseFloat discusion
+
+let firstName = "Mamunur";
+let lastName = "Rashid";
+let concatinationString = firstName + " " + lastName; //this is called string concatination;
+let anotherConcatination = `${firstName} + " " +${lastName}`; //this is called string concatination;
+console.log(concatinationString);
