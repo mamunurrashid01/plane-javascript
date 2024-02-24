@@ -90,6 +90,16 @@ console.log(number4);
 number4--;
 console.log(number4);
 
+// (*=) means multiplication shorthand
+let height = 70;
+height *= 10;
+console.log(height); //the result will 700;
+
+// (/=) means division shorthand
+let num1 = 50;
+num1 /= 10;
+console.log(num1); //the result will show 5;
+
 //string concatination ,type conversion, parseInt, parseFloat discusion
 
 let firstName = "Mamunur";
