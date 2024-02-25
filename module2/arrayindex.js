@@ -20,3 +20,20 @@ console.log(findValue);
 
 num[4] = 75;
 console.log(num);
+
+// num.push(456); //new element add at last of an array using by * push * method
+console.log(num);
+
+//remove element from at last of an array using by * pop * method
+num.pop();
+console.log(num);
+
+// add new element at finrst of an array to use * unshift * method
+
+num.unshift(600);
+console.log(num);
+
+// remove an element from at finrst of an array to use * shift * method
+
+num.shift();
+console.log(num);
