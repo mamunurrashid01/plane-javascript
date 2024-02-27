@@ -112,3 +112,109 @@ if (side1 == side2 || side1 == side3 || side2 == side3) {
 let name = "Mamunur";
 let Lname = "Rashid";
 console.log(name + " " + Lname);
+
+//ANOTHER DISCUSSION ABOUT LOOP
+
+/**
+ * 1. for loop discussion
+ * 2.for in loop discussion
+ * 3.for of loop discussion
+ * 4.whole loop discussion
+ * 5.do while loop discussion
+ */
+//use of for loop on array
+// let arrNames = ["adil", "abir", "sifat", "uzzal", "shohel", "tanvir"];
+// for (let i = 0; i < arrNames.length; i++) {
+//   let showMe = arrNames[i];
+//   console.log(showMe);
+// }
+
+//break use in for loop
+// let arrNames = ["adil", "abir", "sifat", "uzzal", "shohel", "tanvir"];
+// for (let i = 0; i < arrNames.length; i++) {
+//   if (arrNames[i] == "uzzal") {
+//     break;
+//   }
+//   let showMe = arrNames[i];
+//   console.log(showMe);
+// }
+
+//continue use in for loop
+
+//break use in for loop
+// let arrNames = ["adil", "abir", "sifat", "uzzal", "shohel", "tanvir"];
+// for (let i = 0; i < arrNames.length; i++) {
+//   if (arrNames[i] == "uzzal") {
+//     continue;
+//   }
+//   let showMe = arrNames[i];
+//   console.log(showMe);
+// }
+
+//DISCUSSION OF FOR IN LOOP(IT IS USEFULL FOR BASICALY IN ARRAY AND OBJECT)
+
+//use of for in loop on an array
+
+// let arrNames = ["adil", "abir", "sifat", "uzzal", "shohel", "tanvir"];
+// for (let index in arrNames) {
+//   let showMe = arrNames[index];//here index variable give us the index of array;
+//   console.log(showMe);
+// }
+
+//use of for in loop on an object
+
+// let arrNames = {
+//   name: "Mamunur",
+//   salary: 25000,
+//   joiningDate: "25 / 8 / 2004",
+//   oficeAddress: "dhaka",
+// };
+// for (let key in arrNames) {
+//   let getIndex = key; //here key variable give us the index of the object;
+//   let showMe = arrNames[index];
+//   console.log(getIndex, showMe);
+// }
+
+//use of for of loop on an array
+
+// let arrNames = ["adil", "abir", "sifat", "uzzal", "shohel", "tanvir"];
+// for (let index of arrNames) {
+//   console.log(index); //here index variable give us directly value of the array;
+// }
+
+//use of for of loop on a string
+
+// let arrNames = "Mamunur rashid";
+// for (let index of arrNames) {
+//   console.log(index);
+// }
+
+//N.B: WE USE / FOR IN / LOOP WHEN WE NEED KEYS OF OBJECT AND ARRAYS ETC. BUT WHEN WE NEED JUST VALUE OF AN ARRAY OR OBJECT DIRECTLY THEN WE USE / FOR OF / LOOP
+
+//use of while loop on an array
+
+// let arrNames = ["adil", "abir", "sifat", "uzzal", "shohel", "tanvir"];
+// let initial = 0;
+// while (initial <= 4) {
+//   console.log(arrNames[initial]); //here the / initial / variable give us the value of the array;
+//   initial++;
+// }
+
+//use of / do while / loop on an array
+
+// let arrNames = ["adil", "abir", "sifat", "uzzal", "shohel", "tanvir"];
+
+// let i = 1;
+// do {
+//   console.log("Comment zarur kare vai");
+//   i++; //IF CONDITION WILL TRUE THEN IT WILL GIVE US OUTPUT WITH BASED CONDITION BUT IF CONDITION IS NOT TRUE THEN ALSO IT WILL GIVES US ATLIST ONE OUTPUT;
+// } while (i <= 4);
+
+//nested loop
+for (let i = 0; i <= 2; i++) {
+  for (let j = 0; j <= 3; j++) {
+    console.log(
+      "give me the value of " + i + " and" + "give the value of " + j
+    );
+  }
+}
