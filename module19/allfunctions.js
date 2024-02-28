@@ -110,3 +110,96 @@ const returnValue = outerFunc(5);
 // console.log(returnValue);it will return whole innerFunc();
 let seeTheClosure = returnValue(5);
 console.log(seeTheClosure); //now it will show the result 10;
+
+//callback function discussion
+
+function discussCallback(bar) {
+  bar(); //this bar() is called callback function
+}
+// discussCallback();
+discussCallback(function () {
+  //this function is a annonymous function because the function has no name;the function who has no name it's called annonymous function;
+  console.log("bar..");
+});
+
+//another example of callback function
+
+function myName() {
+  console.log("Another example of callback function");
+}
+discussCallback(myName); //it means myname() function is the argument of the bar() function;
+
+//another example of callback function
+function foo(bar) {
+  if (isOver) {
+    bar(); //bar() is a callback function
+  }
+  if (isStillNow) {
+    bar(); //it means when your needed you can call which function at a certain time it's call callback function
+  }
+}
+
+//pure function discussion
+function pureFunc(name) {
+  console.log(`Hello ${name}`); //this is pure function
+}
+pureFunc("Mamunur");
+
+//another example of pure function
+let myVillage = "Momipur";
+function pureFun(name) {
+  console.log(`my village name is ${myVillage} and my name is ${name}`);
+}
+pureFun("Mamunur rashid");
+
+myVillage = "Boro Monipur"; //now when i want to get output then myVillage is set to Boro Monipur not only Monipur,it's call side effect;
+
+pureFun("Mamunur rashid");
+
+//IIFE(Immediately Invoc function expression)
+
+(function () {
+  console.log("This is Immediately Invoc Function Expression");
+})(); //that mean you no need declare whith a name of the fuction,it just need to write to inside a paranthisis
+
+//Discussion about call stack function with function exicution
+function fun1() {
+  console.log("Hello world!, I am call stack function");
+}
+function fun2() {
+  console.log("This is also function 2 to invoc");
+  fun1();
+}
+function fun3() {
+  fun2();
+}
+fun3(); //the function fun3 goes to fun2 to exicute but when it goes to fun2 the it's also goes to fun1 and then they execute fun1 value,then execute fun2 's value and then goes to fun3() and finaly it stop himself;
+
+//discussion about recursion
+//recursion
+//base condition
+function recur() {
+  recur();
+}
+// recur();when you try to execute it then it will redursion for meximum time
+
+//another example
+
+function reCurse() {
+  if (base_condition) {
+    console.log("Do somthings");
+    return; //if do not return then it will make recursion
+  }
+  reCurse();
+}
+
+//recursion example
+function takeMedicine(count) {
+  if (count === 0) {
+    console.log("Take medicine until get well");
+    return;
+  }
+  console.log("Take medicine");
+  takeMedicine(count - 1);
+}
+takeMedicine(5); //this method mostly use to fectorial mmathmatical operation/NB:it also like or same to  for loop
