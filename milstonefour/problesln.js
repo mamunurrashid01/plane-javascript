@@ -40,10 +40,21 @@ function isCorrectFile(file) {
 console.log(isCorrectFile("index.js"));
 
 function mindGame(posNum) {
-  if (posNum < 0 || posNum == 0) {
+  if (typeof posNum !== "number" || posNum <= 0) {
     return "You must input a positive number";
   }
   let val = (posNum * 3 + 10) / 2 - 5;
   return val;
 }
-console.log(mindGame(1));
+console.log(mindGame(0));
+function isLGSeven(num) {
+  if (typeof num !== "number" || num <= 0) {
+    return "Please provide a number only";
+  }
+  let getNum = num - 7;
+  if (getNum < 7) {
+    return getNum;
+  }
+  return num * 2;
+}
+console.log(isLGSeven(15));
