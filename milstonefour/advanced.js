@@ -16,12 +16,35 @@ console.log(isValidPhotoName(photo, photoExtension));
 
 // find prime numbers
 
-function findPrimeNumber(prime) {
-  if (!Array.isArray(prime)) {
-    return "Please provide me a array of number";
-  }
-  let primeNum = [];
-  for (item of prime) {
+// function findPrimeNumber(prime) {
+//   if (!Array.isArray(prime)) {
+//     return "Please provide me a array of number";
+//   }
+//   let primeNum = [];
+//   for (item of prime) {
+//     if (item > 1) {
+//       let isPrime = true;
+//       for (let i = 2; i < item; i++) {
+//         if (item % i === 0) {
+//           isPrime = false;
+//           break;
+//         }
+//       }
+//       if (isPrime === true) {
+//         primeNum.push(item);
+//       }
+//     }
+//   }
+//   return primeNum;
+// }
+
+// let arr = [1, 2, 34, 54, 2, 4, 5, 6, 7, 8, 9, 10];
+// let val = findPrimeNumber(arr);
+// console.log(val);
+
+function primNumber(num) {
+  let getArray = [];
+  for (item of num) {
     if (item > 1) {
       let isPrime = true;
       for (let i = 2; i < item; i++) {
@@ -31,16 +54,16 @@ function findPrimeNumber(prime) {
         }
       }
       if (isPrime === true) {
-        primeNum.push(item);
+        getArray.push(item);
       }
     }
   }
-  return primeNum;
+  return getArray;
 }
 
-let arr = [1, 2, 34, 54, 2, 4, 5, 6, 7, 8, 9, 10];
-let val = findPrimeNumber(arr);
-console.log(val);
+let arr = [12, 23, 43, 54, 54, 44, 55, 2, 4, 5, 65, 19, 29, 41, 53];
+let callFunc = primNumber(arr);
+console.log(callFunc);
 
 // recursion function
 function sumOfn(n) {
